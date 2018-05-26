@@ -1,6 +1,7 @@
 public class Player()
 {
     private int health, shield;
+    private Weapon w;
   
     public Player()
     {
@@ -21,5 +22,10 @@ public class Player()
     public void setHealth()
     {
         
+    }
+    
+    public Weapon weaponHeld()
+    {
+        return w;
     }
 }
