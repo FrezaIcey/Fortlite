@@ -1,11 +1,10 @@
 package dev.project.fortlite.display;
 
-import java.awt.Canvas;
-import java.awt.Dimension;
-
+import java.awt.*
 import javax.swing.JFrame;
 
-public class Display {
+public class Display 
+{
 
 	private JFrame frame;
 	private Canvas canvas;
@@ -13,14 +12,16 @@ public class Display {
 	private int width, height;
 	
 	
-	public Display(String t, int w, int h) {
+	public Display(String t, int w, int h) 
+	{
 		title = t;
 		width = w;
 		height = h;
 	}
 	
 	
-	private void createDisplay(){
+	private void createDisplay()
+	{
 		frame = new JFrame(title);
 		frame.setSize(width, height);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE );
@@ -35,6 +36,6 @@ public class Display {
 		
 		frame.add(canvas);
 		frame.pack();
-		}
 	}
+}
 	
