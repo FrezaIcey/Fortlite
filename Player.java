@@ -21,7 +21,7 @@ public class Player()
     
     public void setHealth()
     {
-        health = 100;
+       
     }
     
     public Weapon weaponHeld()
