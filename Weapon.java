@@ -1,10 +1,12 @@
-//ChrisEden 5/18/18 Version: 0.1
+// ChrisEden 5/30/18 Version 0.2
 public abstract class Weapon 
 {
 	public abstract String getName(); 
 	public abstract int getDamage(); 
 	public abstract int getMagazineSize(); 
 	public abstract int getCurrentMagazine(); 
+	public abstract int getDistance(); 
+	public abstract int getReloadTime(); 
 	
 	public int fire(Weapon w)
 	{
