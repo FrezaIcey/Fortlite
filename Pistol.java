@@ -1,4 +1,4 @@
-//ChrisEden 5/18/18 Version: 0.1
+// ChrisEden 5/30/18 Version 0.2
 public class Pistol extends Weapon
 {
 	private int damageP, magazineP, currentMagazine;
@@ -8,13 +8,6 @@ public class Pistol extends Weapon
 		  damageP = 10; 
 		  magazineP = 16; 
 		  currentMagazine = magazineP; 
-		  name = "Pistol";
-	}
-	public Pistol(int c)
-	{
-		  damageP = 10; 
-		  magazineP = 16; 
-		  currentMagazine = c; 
 		  name = "Pistol";
 	}
 	public String getName()
@@ -32,6 +25,10 @@ public class Pistol extends Weapon
 	public int getCurrentMagazine()
 	{
 		return currentMagazine; 
+	}
+	public int getDistance() 
+	{
+		return 170; 
 	}
 }
 
