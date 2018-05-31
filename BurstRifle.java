@@ -30,5 +30,12 @@ public class BurstRifle extends Weapon
 	{
 		return 342; 
 	}
+	public void addAmmo()
+	{
+		currentMagazine = magazineBR; 
+	}
+	public int getReloadTime() 
+	{
+		return 4;
+	}
 }
-
