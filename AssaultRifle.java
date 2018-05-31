@@ -31,5 +31,12 @@ public class AssaultRifle extends Weapon
 	{
 		return 342; 
 	}
+	public void addAmmo()
+	{
+		currentMagazine = magazineAR; 
+	}
+	public int getReloadTime() 
+	{
+		return 4;
+	}
 }
-
