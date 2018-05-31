@@ -1,4 +1,5 @@
 // ChrisEden 5/30/18 Version 0.2
+
 public abstract class Weapon 
 {
 	public abstract String getName(); 
@@ -7,6 +8,7 @@ public abstract class Weapon
 	public abstract int getCurrentMagazine(); 
 	public abstract int getDistance(); 
 	public abstract int getReloadTime(); 
+	public abstract void addAmmo(); 
 	
 	public int fire(Weapon w)
 	{
@@ -15,7 +17,7 @@ public abstract class Weapon
 			return w.getDamage(); 
 		}	
 		else 
-			return -1; 
+			return 0; 
 	}
 	private boolean canShoot(Weapon w)
 	{
