@@ -1,4 +1,4 @@
-// ChrisEden 5/18/18 Version 0.1
+// ChrisEden 5/30/18 Version 0.2
 
 public class AssaultRifle extends Weapon
 {
@@ -9,13 +9,6 @@ public class AssaultRifle extends Weapon
 		  damageAR = 20; 
 		  magazineAR = 30; 
 		  currentMagazine = magazineAR; 
-		  name = "Assault Rifle";
-	}
-	public AssaultRifle(int c)
-	{
-		  damageAR = 20; 
-		  magazineAR = 30; 
-		  currentMagazine = c; 
 		  name = "Assault Rifle";
 	}
 	public String getName()
@@ -33,6 +26,10 @@ public class AssaultRifle extends Weapon
 	public int getCurrentMagazine()
 	{
 		return currentMagazine; 
+	}
+	public int getDistance() 
+	{
+		return 342; 
 	}
 }
 
