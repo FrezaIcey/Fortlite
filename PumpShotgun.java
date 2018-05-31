@@ -1,4 +1,4 @@
-//ChrisEden 5/18/18 Version: 0.1
+//ChrisEden 5/30/18 Version: 0.2
 public class PumpShotgun extends Weapon
 {
 	private int damagePS, magazinePS, currentMagazine;
@@ -8,13 +8,6 @@ public class PumpShotgun extends Weapon
 		  damagePS = 25; 
 		  magazinePS = 8;
 		  currentMagazine = magazinePS; 
-		  name = "Pump Shotgun ";
-	}
-	public PumpShotgun(int c)
-	{
-		  damagePS = 25; 
-		  magazinePS = 8;
-		  currentMagazine = c; 
 		  name = "Pump Shotgun ";
 	}
 	public String getName()
@@ -32,5 +25,9 @@ public class PumpShotgun extends Weapon
 	public int getCurrentMagazine()
 	{
 		return currentMagazine; 
+	}
+	public int getDistance() 
+	{
+		return 86; 
 	}
 }
