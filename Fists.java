@@ -28,4 +28,11 @@ public class Fists extends Weapon
 	{
 		return 10; 
 	}
+	public void addAmmo()
+	{
+		return; 
+	}
+	public int getReloadTime() {
+		return 0;
+	}
 }
