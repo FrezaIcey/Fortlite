@@ -30,4 +30,12 @@ public class PumpShotgun extends Weapon
 	{
 		return 86; 
 	}
+	public void addAmmo()
+	{
+		currentMagazine = magazinePS; 
+	}
+	public int getReloadTime() 
+	{
+		return 5;
+	}
 }
