@@ -30,5 +30,12 @@ public class Pistol extends Weapon
 	{
 		return 170; 
 	}
+	public void addAmmo()
+	{
+		currentMagazine = magazineP; 
+	}
+	public int getReloadTime() 
+	{
+		return 2;
+	}
 }
-
