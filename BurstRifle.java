@@ -1,20 +1,13 @@
-//ChrisEden 5/18/18 Version: 0.1
+//ChrisEden 5/30/18 Version: 0.2
 public class BurstRifle extends Weapon 
 {
 	private int damageBR, magazineBR, currentMagazine;
 	private String name; 
 	public BurstRifle()
 	{
-		  damageBR = 20; 
+		  damageBR = 15; 
 		  magazineBR = 30; 
 		  currentMagazine = magazineBR; 
-		  name = "Burst Rifle";
-	}
-	public BurstRifle(int c)
-	{
-		  damageBR = 20; 
-		  magazineBR = 30; 
-		  currentMagazine = c; 
 		  name = "Burst Rifle";
 	}
 	public String getName()
@@ -32,6 +25,10 @@ public class BurstRifle extends Weapon
 	public int getCurrentMagazine()
 	{
 		return currentMagazine; 
+	}
+	public int getDistance() 
+	{
+		return 342; 
 	}
 }
 
