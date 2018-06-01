@@ -1,7 +1,9 @@
+import java.util.ArrayList;
+
 public class Player()
 {
-    private int health;
-    private Weapon w;
+    private int health, Position p;
+    Weapon w;
   
     public Player()
     {
@@ -13,13 +15,24 @@ public class Player()
         return health;
     }
     
+    public Position getPosition()
+    {
+        return p;
+    }
+    
     public void setHealth()
     {
        
     }
     
-    public Weapon weaponHeld()
+    public void setWeapon(ArrayList<Weapon> weapons)
     {
-        return w;
+        int i = (int)(Math.random() * weapons.size()) + 1;
+        w = weapons.remove(i);
+    }
+    
+    public void addAmmo()
+    {
+        
     }
 }
