@@ -9,6 +9,7 @@ public abstract class Weapon
 	public abstract int getDistance(); 
 	public abstract int getReloadTime(); 
 	public abstract void addAmmo(); 
+	public abstract void getVelocity();
 	
 	public int fire(Weapon w)
 	{
