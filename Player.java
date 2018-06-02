@@ -27,4 +27,15 @@ public class Player()
         int i = (int)(Math.random() * weapons.size()) + 1;
         w = weapons.remove(i);
     }
+    
+    public void setController(Arraylist<Controller> controllers)
+    {
+        int i = (int)(Math.random() * controllers.size()) + 1;
+        c = controllers.remove(i);
+    }
+    
+    public Controller getController()
+    {
+        return c;
+    }
 }
