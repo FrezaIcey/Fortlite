@@ -3,12 +3,13 @@ package dev.project.fortlite.weapon;
 //ChrisEden 6/4/18 Version: 0.3
 public class PumpShotgun extends Weapon
 {
-	private int damagePS, magazinePS, currentMagazine, velocity;
+	private int damagePS, magazinePS, currentMagazine, velocity, distance;
 	private String name; 
 	public PumpShotgun()
 	{
 		  damagePS = 25; 
 		  magazinePS = 8;
+		  distance = 86;
 		  velocity = 43; // pixels/second 
 		  currentMagazine = magazinePS; 
 		  name = "Pump Shotgun ";
@@ -31,7 +32,7 @@ public class PumpShotgun extends Weapon
 	}
 	public int getDistance() 
 	{
-		return 86; 
+		return distance; 
 	}
 	public void addAmmo()
 	{
