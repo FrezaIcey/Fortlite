@@ -1,12 +1,15 @@
-//ChrisEden 5/30/18 Version: 0.2
+package dev.project.fortlite.weapon;
+
+//ChrisEden 6/4/18 Version: 0.3
 public class PumpShotgun extends Weapon
 {
-	private int damagePS, magazinePS, currentMagazine;
+	private int damagePS, magazinePS, currentMagazine, velocity;
 	private String name; 
 	public PumpShotgun()
 	{
 		  damagePS = 25; 
 		  magazinePS = 8;
+		  velocity = 43; // pixels/second 
 		  currentMagazine = magazinePS; 
 		  name = "Pump Shotgun ";
 	}
@@ -37,5 +40,9 @@ public class PumpShotgun extends Weapon
 	public int getReloadTime() 
 	{
 		return 5;
+	}
+	public int getVelocity()
+	{
+		return velocity; 
 	}
 }
