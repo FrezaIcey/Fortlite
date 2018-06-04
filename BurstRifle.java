@@ -1,12 +1,15 @@
-//ChrisEden 5/30/18 Version: 0.2
+//ChrisEden 6/4/18 Version: 0.3
 public class BurstRifle extends Weapon 
 {
-	private int damageBR, magazineBR, currentMagazine;
+	private int damageBR, magazineBR, currentMagazine, reloadTime, distance, velocity;
 	private String name; 
 	public BurstRifle()
 	{
 		  damageBR = 15; 
 		  magazineBR = 30; 
+		  distance = 342; 
+		  velocity = 228; 
+		  reloadTime = 4; 
 		  currentMagazine = magazineBR; 
 		  name = "Burst Rifle";
 	}
@@ -28,7 +31,7 @@ public class BurstRifle extends Weapon
 	}
 	public int getDistance() 
 	{
-		return 342; 
+		return distance; 
 	}
 	public void addAmmo()
 	{
@@ -36,6 +39,10 @@ public class BurstRifle extends Weapon
 	}
 	public int getReloadTime() 
 	{
-		return 4;
+		return reloadTime;
+	}
+	public int getVelocity()
+	{
+		return velocity; 
 	}
 }
