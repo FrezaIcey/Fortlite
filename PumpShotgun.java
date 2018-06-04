@@ -3,7 +3,7 @@ package dev.project.fortlite.weapon;
 //ChrisEden 6/4/18 Version: 0.3
 public class PumpShotgun extends Weapon
 {
-	private int damagePS, magazinePS, currentMagazine, velocity, distance;
+	private int damagePS, magazinePS, currentMagazine, velocity, distance, reloadTime;
 	private String name; 
 	public PumpShotgun()
 	{
@@ -11,6 +11,7 @@ public class PumpShotgun extends Weapon
 		  magazinePS = 8;
 		  distance = 86;
 		  velocity = 43; // pixels/second 
+		  reloadTime = 5;
 		  currentMagazine = magazinePS; 
 		  name = "Pump Shotgun ";
 	}
@@ -40,7 +41,7 @@ public class PumpShotgun extends Weapon
 	}
 	public int getReloadTime() 
 	{
-		return 5;
+		return reloadTime;
 	}
 	public int getVelocity()
 	{
