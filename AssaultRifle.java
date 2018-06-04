@@ -1,13 +1,16 @@
-// ChrisEden 5/30/18 Version 0.2
+// ChrisEden 6/4/18 Version: 0.3
 
 public class AssaultRifle extends Weapon
 {
-	private int damageAR, magazineAR, currentMagazine;
+	private int damageAR, magazineAR, currentMagazine,velocity, distance, reloadTime;
 	private String name; 
 	public AssaultRifle()
 	{
 		  damageAR = 20; 
 		  magazineAR = 30; 
+		  velocity = 228; // in pixels/second
+		  distance = 342; 
+		  reloadTime = 4; 
 		  currentMagazine = magazineAR; 
 		  name = "Assault Rifle";
 	}
@@ -29,7 +32,7 @@ public class AssaultRifle extends Weapon
 	}
 	public int getDistance() 
 	{
-		return 342; 
+		return distance; 
 	}
 	public void addAmmo()
 	{
@@ -37,6 +40,6 @@ public class AssaultRifle extends Weapon
 	}
 	public int getReloadTime() 
 	{
-		return 4;
+		return reloadTime;
 	}
 }
