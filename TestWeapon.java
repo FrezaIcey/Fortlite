@@ -1,7 +1,8 @@
-//ChrisEden 5/18/18 Version: 0.1
+package dev.project.fortlite.weapon;
 
+//ChrisEden 6/5/18 Version: 0.2
 import java.util.ArrayList; 
-public class TestWeapon 
+public class WeaponTest 
 {
 	public static void main(String[] args) 
 	{
@@ -11,6 +12,13 @@ public class TestWeapon
 		list.add(new PumpShotgun());
 		list.add(new Pistol()); 
 		for(int i = 0; i < list.size(); i++) 
-			System.out.println(list.get(i).canShoot(list.get(i)));
+		{	
+			System.out.print(list.get(i).getVelocity() + " ");
+			System.out.print(list.get(i).getDistance() + " ");
+			System.out.print(list.get(i).getReloadTime() + " ");
+			System.out.print(list.get(i).getName());
+			System.out.println();; 
+		}
+			
 	}
 }
