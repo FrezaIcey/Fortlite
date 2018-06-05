@@ -1,12 +1,17 @@
-// ChrisEden 5/30/18 Version 0.2
+package dev.project.fortlite.weapon;
+
+//ChrisEden 6/5/18 Version 0.4
 public class Fists extends Weapon
 {
 	private String name; 
-	private int damage; 
+	private int damage, velocity, distance, reloadTime; 
 	public Fists()
 	{
 		name = "Fists";
-		damage = 100; 
+		damage = 100;
+		velocity = 1; // pixels/second
+		reloadTime = 5; 
+		distance  = 10; 
 	}
 	public String getName()
 	{
@@ -16,7 +21,7 @@ public class Fists extends Weapon
 	{
 	    return damage; 
 	}
-    public int getMagazineSize()
+ public int getMagazineSize()
 	{
 		return -1; 
 	}
@@ -26,13 +31,18 @@ public class Fists extends Weapon
 	}
 	public int getDistance() 
 	{
-		return 10; 
+		return distance; 
 	}
 	public void addAmmo()
 	{
 		return; 
 	}
-	public int getReloadTime() {
-		return 0;
+	public int getReloadTime() 
+	{
+		return reloadTime;
+	}
+	public int getVelocity() 
+	{
+		return velocity; 
 	}
 }
