@@ -7,9 +7,9 @@ public class BurstRifle extends Weapon
 	{
 		  damageBR = 15; 
 		  magazineBR = 30; 
-		  distance = 342; 
-		  velocity = 228; 
-		  reloadTime = 4; 
+		  distance = 342; // pixels
+		  velocity = 228; // pixels/second
+		  reloadTime = 4; // seconds 
 		  currentMagazine = magazineBR; 
 		  name = "Burst Rifle";
 	}
