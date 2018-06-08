@@ -8,9 +8,9 @@ public class AssaultRifle extends Weapon
 	{
 		  damageAR = 20; 
 		  magazineAR = 30; 
-		  velocity = 228; // in pixels/second
-		  distance = 342; 
-		  reloadTime = 4; 
+		  velocity = 228; // pixels/second
+		  distance = 342; // pixles 
+		  reloadTime = 4; // seconds
 		  currentMagazine = magazineAR; 
 		  name = "Assault Rifle";
 	}
