@@ -1,14 +1,19 @@
-// ChrisEden 5/30/18 Version 0.2
+package dev.project.fortlite.weapon;
+
+//ChrisEden 6/5/18 Version: 0.3
 public class Pistol extends Weapon
 {
-	private int damageP, magazineP, currentMagazine;
+	private int damageP, magazineP, currentMagazine, distance, reloadTime, velocity;
 	private String name; 
 	public Pistol()
 	{
-		  damageP = 10; 
-		  magazineP = 16; 
-		  currentMagazine = magazineP; 
-		  name = "Pistol";
+		name = "Pistol";
+		damageP = 10; 
+        	magazineP = 16; 
+		currentMagazine = magazineP; // initial set for the ammo
+		distance = 170; // pixels 
+		reloadTime = 2; // seconds
+		velocity = 113; // pixels/second
 	}
 	public String getName()
 	{
@@ -28,7 +33,7 @@ public class Pistol extends Weapon
 	}
 	public int getDistance() 
 	{
-		return 170; 
+		return distance; 
 	}
 	public void addAmmo()
 	{
@@ -36,6 +41,10 @@ public class Pistol extends Weapon
 	}
 	public int getReloadTime() 
 	{
-		return 2;
+		return reloadTime;
+	}
+	public int getVelocity()
+	{
+		return velocity; 
 	}
 }
