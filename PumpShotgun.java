@@ -9,9 +9,9 @@ public class PumpShotgun extends Weapon
 	{
 		  damagePS = 25; 
 		  magazinePS = 8;
-		  distance = 86;
+		  distance = 86; //pixels 
 		  velocity = 43; // pixels/second 
-		  reloadTime = 5;
+		  reloadTime = 5; // seconds
 		  currentMagazine = magazinePS; 
 		  name = "Pump Shotgun ";
 	}
