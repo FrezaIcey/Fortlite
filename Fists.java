@@ -9,9 +9,9 @@ public class Fists extends Weapon
 	{
 		name = "Fists";
 		damage = 100;
-		velocity = 1; // pixels/second
-		reloadTime = 5; 
-		distance  = 10; 
+		velocity = 10; // pixels/second
+		reloadTime = 5; // seconds 
+		distance  = 10; // pixels 
 	}
 	public String getName()
 	{
