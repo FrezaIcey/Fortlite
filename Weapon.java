@@ -1,9 +1,8 @@
 package dev.project.fortlite.weapon;
 
-// ChrisEden 6/10/18 Version: 0.5;
+// ChrisEden 6/11/18 Version: 0.6;
 import java.awt.event.*;
-import javax.swing.Timer; 
-import edu.wpi.first.wpilibj.XboxController;
+import javax.swing.Timer;
 public abstract class Weapon 
 {
 	public abstract String getName(); 
@@ -19,7 +18,7 @@ public abstract class Weapon
 		
 	public int fire()
 	{
-		if(canShoot(this))
+		if(canShoot())
 		{	
 			return this.getDamage(); 
 		}	
@@ -42,27 +41,5 @@ public abstract class Weapon
 			}
 		}
 		return false; 
-	}
-	public void updateWeapon(XboxController x)
-	{
-		//creates a timer object that whenever there is user input on the x button, it sets reloading to true 
-		//and doesn't allow for other input
-		Timer t = new Timer(this.getReloadTime() * 1000, new ActionListener() 
-		{
-		     public void actionPerformed(new ActionEvent(x, 3, "Reload"))
-		     {
-		    	 if(a.getModifiers() == 3)
-		    	 { 
-		    		 t.start(); 
-		    		 reloading = true;
-		    		 this.addAmmo();
-		    	 }
-		     }
-		}); 
-		
-		if(reloading && t.isRunning())
-		{	
-			t.stop(); 
-		}
 	}
 }
