@@ -1,8 +1,12 @@
 package dev.project.fortlite.weapon;
 
-// ChrisEden 6/11/18 Version: 0.6;
+// ChrisEden 6/12/18 Version: 0.7;
 import java.awt.event.*;
 import javax.swing.Timer;
+import net.java.games.input.Component;
+import net.java.games.input.Controller; 
+import net.java.games.input.Component.Identifier; 
+
 public abstract class Weapon 
 {
 	public abstract String getName(); 
@@ -25,7 +29,7 @@ public abstract class Weapon
 		else 
 			return 0; 
 	}
-	private boolean canShoot()
+	private boolean canShoot(Controller xboxController)
 	{
 		if(!reloading)
 		{
