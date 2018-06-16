@@ -1,6 +1,6 @@
 package dev.project.fortlite.weapon;
 
-// ChrisEden 6/12/18 Version: 0.8;
+// ChrisEden 6/16/18 Version: 0.10;
 public abstract class Weapon 
 {
 	public abstract String getName(); 
@@ -12,7 +12,7 @@ public abstract class Weapon
 	public abstract void addAmmo(); 
 	public abstract int getVelocity();
 	
-	public static boolean reloading = false; 
+	public boolean reloading = false; 
 		
 	public int fire()
 	{
@@ -25,16 +25,19 @@ public abstract class Weapon
 	}
 	private boolean canShoot()
 	{
-		
-		if(this.getName() != "Burst Rifle")
+		if(!reloading)
 		{
-			if(this.getCurrentMagazine() != 0)
-				return true;  
-		}
-		else 
-		{
-			if(this.getCurrentMagazine() >= 3)
-				return true; 
+			if(this.getName() != "Burst Rifle")
+			{
+				if(this.getCurrentMagazine() != 0)
+					return true;  
+			}
+			else 
+			{
+				if(this.getCurrentMagazine() >= 3)
+					return true; 
+			}
+			return false; 
 		}
 		return false; 
 	}
