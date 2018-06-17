@@ -1,5 +1,5 @@
-// ChrisEden 6/4/18 Version: 0.3
 
+// ChrisEden 6/4/18 Version: 0.3
 public class AssaultRifle extends Weapon
 {
 	private int damageAR, magazineAR, currentMagazine,velocity, distance, reloadTime;
@@ -9,7 +9,7 @@ public class AssaultRifle extends Weapon
 		  damageAR = 20; 
 		  magazineAR = 30; 
 		  velocity = 228; // pixels/second
-		  distance = 342; // pixles 
+		  distance = 342; // pixels 
 		  reloadTime = 4; // seconds
 		  currentMagazine = magazineAR; 
 		  name = "Assault Rifle";
@@ -41,5 +41,9 @@ public class AssaultRifle extends Weapon
 	public int getReloadTime() 
 	{
 		return reloadTime;
+	}
+	public int getVelocity()
+	{
+		return velocity; 
 	}
 }
